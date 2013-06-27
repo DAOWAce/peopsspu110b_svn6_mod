@@ -139,35 +139,35 @@ void ReadConfig(void)
 
 	
 	if( reset ) {
-		// Defaults
+					// Defaults
 		iUseXA=1;
- iVolume=10;
- iXAPitch=0;
- iUseTimer=4;
- iSPUIRQWait=0;
- iDebugMode=0;
- iRecordMode=0;
- iUseReverb=2;
- iUseInterpolation=2;
- iDisStereo=0;
- iUseDBufIrq=1;
- iFreqResponse=0;
- iEmuType=0;
- iXAStrength=0;
- iCDDAStrength=0;
- iOutput2Strength=0;
- APU_run = 10;
- iReleaseIrq = 0;
- iLatency = 4;
+		iVolume=10;
+		iXAPitch=0;
+		iUseTimer=4;
+		iSPUIRQWait=0;
+		iDebugMode=0;
+		iRecordMode=0;
+		iUseReverb=2;
+		iUseInterpolation=2;
+		iDisStereo=0;
+		iUseDBufIrq=1;
+		iFreqResponse=0;
+		iEmuType=0;
+		iXAStrength=0;
+		iCDDAStrength=0;
+		iOutput2Strength=0;
+		APU_run = 10;
+		iReleaseIrq = 0;
+		iLatency = 4;
 
- iXAInterp = 2;
- iCDDAInterp = 0;
- iOutputInterp1 = 0;
- iOutputInterp2 = 0;
+		iXAInterp = 2;
+		iCDDAInterp = 0;
+		iOutputInterp1 = 0;
+		iOutputInterp2 = 0;
 
- iVolCDDA = 10;
- iVolXA = 10;
- iVolVoices = 10;
+		iVolCDDA = 10;
+		iVolXA = 10;
+		iVolVoices = 10;
 
 
 		fp = _fsopen( "plugins\\spuPeopsSound.ini", "w", _SH_DENYNO );
@@ -207,34 +207,34 @@ void ReadConfig(void)
 	}
 
 
-	latency_target = (iLatency+1) * 10;
+	//latency_target = (iLatency+1) * 10;
 
 	// =================================
 	// =================================
 	// =================================
 
 	// set defaults here
-	reverb_target = 33;
-	if( iReverbBoost ) reverb_target = 38;
+	//reverb_target = 33;
+	//if( iReverbBoost ) reverb_target = 38;
 
-	latency_restart = 15;
-	sound_stretcher = 0;
+	//latency_restart = 15;
+	//sound_stretcher = 0;
 
-	debug_sound_buffer = 0;
-	debug_cdxa_buffer = 0;
+	//debug_sound_buffer = 0;
+	//debug_cdxa_buffer = 0;
 
-	phantom_padder = 0;
-	phantom_pad_size = 50;
-	phantom_post_pad = 500;
-	APU_run = 45;
+	//phantom_padder = 0;
+	//phantom_pad_size = 50;
+	//phantom_post_pad = 0;
+	APU_run = 10;
 
-	upload_timer = 25;
-	upload_low_reset = 2;
-	upload_high_full = 30;
-	upload_high_reset = 60;
+	//upload_timer = 25;
+	//upload_low_reset = 2;
+	//upload_high_full = 30;
+	//upload_high_reset = 60;
 
-	async_wait_block = 13;
-	async_ondemand_block = 8;
+	//async_wait_block = 13;
+	//async_ondemand_block = 8;
 
 
 	reset = 1;
@@ -314,7 +314,7 @@ void ReadConfig(void)
 	
 
 	// clip limit
-	if( APU_run > 50 ) APU_run = 50;
+//	if( APU_run > 50 ) APU_run = 50;
 
 	// =================================
 	// =================================

@@ -100,7 +100,6 @@ void SoundFeedStreamData(unsigned char* pSound,long lBytes)
 		case 2: XAudio2_SoundFeedStreamData( pSound, lBytes ); break;
 		case 3: XAudio2_SoundFeedStreamData( pSound, lBytes ); break;
 		//case 4: OpenAL_SoundFeedStreamData( pSound, lBytes ); break;
-		//case 4: OpenAL_SoundFeedStreamData( pSound, lBytes ); break;
 	}
 }
 
